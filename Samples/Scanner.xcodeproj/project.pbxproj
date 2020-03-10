@@ -31,6 +31,8 @@
 		6F8BE660199EED0C00E10C10 /* CalibrationOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F8BE65F199EED0C00E10C10 /* CalibrationOverlay.mm */; };
 		712018C92417C823004D9512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712018C82417C823004D9512 /* main.m */; };
 		712018CC2417C83D004D9512 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 712018CB2417C83D004D9512 /* AppDelegate.mm */; };
+		712018D22417CCBE004D9512 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712018D12417CCBE004D9512 /* Structure.framework */; };
+		712018D32417CCBE004D9512 /* Structure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 712018D12417CCBE004D9512 /* Structure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71F6C06923F7406000F3FBB9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D69918438E42005BEE8B /* Accelerate.framework */; };
 		71F6C06B23F7406200F3FBB9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9C617EA78280097C231 /* AVFoundation.framework */; };
 		71F6C06D23F7406400F3FBB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF77B8A17F2575500A99E20 /* CoreGraphics.framework */; };
@@ -48,19 +50,17 @@
 		71F6C08523F7407800F3FBB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9C817EA78590097C231 /* QuartzCore.framework */; };
 		71F6C08723F7407C00F3FBB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC8D77176F966000F7F3B5 /* UIKit.framework */; };
 		71F6C08B23F7419A00F3FBB9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7555DE21277E9200B0B89D /* VideoToolbox.framework */; };
-		71F6C08D23F741EA00F3FBB9 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F355EBC2332DE3200FF559E /* Structure.framework */; };
-		71F6C08E23F741EA00F3FBB9 /* Structure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F355EBC2332DE3200FF559E /* Structure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E2288CE198FE67D00F6E3B2 /* CustomUIKitStyles.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E2288CD198FE67D00F6E3B2 /* CustomUIKitStyles.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		71F6C08F23F741EA00F3FBB9 /* Embed Frameworks */ = {
+		712018D42417CCBE004D9512 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				71F6C08E23F741EA00F3FBB9 /* Structure.framework in Embed Frameworks */,
+				712018D32417CCBE004D9512 /* Structure.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,10 +121,10 @@
 		6F03CB7D1862832600518C22 /* Scanner-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Scanner-Prefix.pch"; sourceTree = "<group>"; };
 		6F8BE65E199EED0C00E10C10 /* CalibrationOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationOverlay.h; sourceTree = "<group>"; };
 		6F8BE65F199EED0C00E10C10 /* CalibrationOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalibrationOverlay.mm; sourceTree = "<group>"; };
-		711EA7F623FAB1DE0008E3CE /* GridLines.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GridLines.framework; sourceTree = "<group>"; };
 		712018C82417C823004D9512 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		712018CA2417C83D004D9512 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		712018CB2417C83D004D9512 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		712018D12417CCBE004D9512 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Structure.framework; path = Frameworks/Structure.framework; sourceTree = "<group>"; };
 		77AAADA41CA5AFC500D91B6C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		7E2288CD198FE67D00F6E3B2 /* CustomUIKitStyles.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomUIKitStyles.mm; sourceTree = "<group>"; };
 		7EAD26B4198C07F600638C9C /* CustomUIKitStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUIKitStyles.h; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F6C08D23F741EA00F3FBB9 /* Structure.framework in Frameworks */,
 				71F6C08523F7407800F3FBB9 /* QuartzCore.framework in Frameworks */,
 				71F6C08123F7407500F3FBB9 /* MetalPerformanceShaders.framework in Frameworks */,
+				712018D22417CCBE004D9512 /* Structure.framework in Frameworks */,
 				3F37E7612242A05F00C7EF10 /* libz.tbd in Frameworks */,
 				71F6C07F23F7407300F3FBB9 /* Metal.framework in Frameworks */,
 				71F6C07323F7406800F3FBB9 /* CoreMotion.framework in Frameworks */,
@@ -181,8 +181,8 @@
 		2AFC8D76176F966000F7F3B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				711EA7F623FAB1DE0008E3CE /* GridLines.framework */,
 				3F355EBC2332DE3200FF559E /* Structure.framework */,
+				712018D12417CCBE004D9512 /* Structure.framework */,
 				3F37E7602242A05F00C7EF10 /* libz.tbd */,
 				3F7555DE21277E9200B0B89D /* VideoToolbox.framework */,
 				3F7555DC21277E8A00B0B89D /* MetalPerformanceShaders.framework */,
@@ -279,7 +279,7 @@
 				2AFC8D71176F966000F7F3B5 /* Frameworks */,
 				2AFC8D72176F966000F7F3B5 /* Resources */,
 				3F355EBF2332E25500FF559E /* Remove extra architectures */,
-				71F6C08F23F741EA00F3FBB9 /* Embed Frameworks */,
+				712018D42417CCBE004D9512 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -460,8 +460,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKSDL7B4PL;
 				FRAMEWORK_SEARCH_PATHS = (
-					../Frameworks,
+					Frameworks,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -542,8 +543,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKSDL7B4PL;
 				FRAMEWORK_SEARCH_PATHS = (
-					../Frameworks,
+					Frameworks,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

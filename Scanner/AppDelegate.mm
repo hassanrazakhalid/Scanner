@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-     SDKVersion ver = currentSDKVersion();
+    
     if (false)
     {
         // STWirelessLog is very helpful for debugging while your Structure Sensor is plugged in.
@@ -29,8 +29,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [ViewController viewController];
-    self.window.rootViewController = self.viewController;
+//    self.viewController = [ViewController viewController];
+//    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
     return YES;

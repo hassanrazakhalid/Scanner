@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :commit => "708474150409b1793cdf65b5b542dc50cc47ad3c" }
+  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :commit => "13e0540cca91bd5bdf02ecc44084a0c394621f6d" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
   spec.source_files  = "Scanner", "Frameworks"
-  spec.exclude_files = "Scanner/AppDelegate.h", "Scanner/AppDelegate.mm", "Scanner/Supporting Files/main.m"
+  #spec.exclude_files = "Scanner/AppDelegate.h", "Scanner/AppDelegate.mm", "Scanner/Supporting Files/main.m"
 
   spec.public_header_files = "Scanner/**/*.h"
 

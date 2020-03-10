@@ -29,10 +29,10 @@
 		6F03CB911862832600518C22 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F03CB731862832600518C22 /* Splash.png */; };
 		6F7803CB186285E10005E6CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F03CB571862823000518C22 /* InfoPlist.strings */; };
 		6F8BE660199EED0C00E10C10 /* CalibrationOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F8BE65F199EED0C00E10C10 /* CalibrationOverlay.mm */; };
-		712018C92417C823004D9512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712018C82417C823004D9512 /* main.m */; };
 		712018CC2417C83D004D9512 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 712018CB2417C83D004D9512 /* AppDelegate.mm */; };
 		712018D22417CCBE004D9512 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712018D12417CCBE004D9512 /* Structure.framework */; };
 		712018D32417CCBE004D9512 /* Structure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 712018D12417CCBE004D9512 /* Structure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		712018D82417D963004D9512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712018D72417D963004D9512 /* main.m */; };
 		71F6C06923F7406000F3FBB9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D69918438E42005BEE8B /* Accelerate.framework */; };
 		71F6C06B23F7406200F3FBB9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB8B9C617EA78280097C231 /* AVFoundation.framework */; };
 		71F6C06D23F7406400F3FBB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF77B8A17F2575500A99E20 /* CoreGraphics.framework */; };
@@ -121,10 +121,10 @@
 		6F03CB7D1862832600518C22 /* Scanner-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Scanner-Prefix.pch"; sourceTree = "<group>"; };
 		6F8BE65E199EED0C00E10C10 /* CalibrationOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationOverlay.h; sourceTree = "<group>"; };
 		6F8BE65F199EED0C00E10C10 /* CalibrationOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalibrationOverlay.mm; sourceTree = "<group>"; };
-		712018C82417C823004D9512 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		712018CA2417C83D004D9512 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		712018CB2417C83D004D9512 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		712018D12417CCBE004D9512 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Structure.framework; path = Frameworks/Structure.framework; sourceTree = "<group>"; };
+		712018D72417D963004D9512 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		77AAADA41CA5AFC500D91B6C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		7E2288CD198FE67D00F6E3B2 /* CustomUIKitStyles.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomUIKitStyles.mm; sourceTree = "<group>"; };
 		7EAD26B4198C07F600638C9C /* CustomUIKitStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUIKitStyles.h; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 				2AB955C1184E573A003DA089 /* MeshView.xib */,
 				438C049818723EB10062E958 /* ViewController.xib */,
 				6F03CB7C1862832600518C22 /* Scanner-Info.plist */,
-				712018C82417C823004D9512 /* main.m */,
+				712018D72417D963004D9512 /* main.m */,
 				6F03CB571862823000518C22 /* InfoPlist.strings */,
 				6F03CB7D1862832600518C22 /* Scanner-Prefix.pch */,
 			);
@@ -278,7 +278,6 @@
 				2AFC8D70176F966000F7F3B5 /* Sources */,
 				2AFC8D71176F966000F7F3B5 /* Frameworks */,
 				2AFC8D72176F966000F7F3B5 /* Resources */,
-				3F355EBF2332E25500FF559E /* Remove extra architectures */,
 				712018D42417CCBE004D9512 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -337,27 +336,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3F355EBF2332E25500FF559E /* Remove extra architectures */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Remove extra architectures";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2AFC8D70176F966000F7F3B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -373,9 +351,9 @@
 				2AEF46201A127B4900CAF953 /* ViewController+SLAM.mm in Sources */,
 				2D1295B0184370FE00E8C685 /* ViewController.mm in Sources */,
 				2D4DE5AC199BB90400F69F56 /* CustomShaders.mm in Sources */,
+				712018D82417D963004D9512 /* main.m in Sources */,
 				7E2288CE198FE67D00F6E3B2 /* CustomUIKitStyles.mm in Sources */,
 				3F7555DB21277E7B00B0B89D /* ViewController+CaptureSession.mm in Sources */,
-				712018C92417C823004D9512 /* main.m in Sources */,
 				712018CC2417C83D004D9512 /* AppDelegate.mm in Sources */,
 				6F8BE660199EED0C00E10C10 /* CalibrationOverlay.mm in Sources */,
 			);

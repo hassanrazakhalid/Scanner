@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :commit => "663e3ecb0cec787a9a4219c69734341d1a688af9" }
+  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :commit => "708474150409b1793cdf65b5b542dc50cc47ad3c" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -120,7 +120,7 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   #spec.libraries = "libz"
 
-  spec.vendored_frameworks = 'Structure.framework'
+  spec.vendored_frameworks = 'Frameworks/Structure.framework'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

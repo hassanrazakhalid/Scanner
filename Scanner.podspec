@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "Scanner"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of Scanner."
+  spec.summary      = "This is just testing purpose."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/hassanrazakhalid/Scanner.git", :commit => "663e3ecb0cec787a9a4219c69734341d1a688af9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,11 +88,10 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+  spec.source_files  = "Scanner", "Frameworks"
+  spec.exclude_files = "Scanner/AppDelegate.h", "Scanner/AppDelegate.mm", "Scanner/Supporting Files/main.m"
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "Scanner/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,10 +115,12 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = "Accelerate", "AVFoundation", "CoreGraphics", "CoreImage", "CoreMedia", "CoreMotion", "CoreVideo", "Foundation", "GLKit", "ImageIO", "MessageUI", "Metal", "MetalPerformanceShaders", "OpenGLES", "QuartzCore", "UIKit", "VideoToolBox"
 
   # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+  #spec.libraries = "libz"
+
+  spec.vendored_frameworks = 'Structure.framework'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
